@@ -1,0 +1,265 @@
+<doctype>
+    <html>
+        <head>
+         <style>
+            fieldset {
+                border-radius: 10px;
+            }
+            legend {
+                color: red;
+            }
+            .required {
+            color: red;
+        }
+        h1 {
+            margin-left: 15cm;
+            color: rgb(192, 5, 220);
+            display: inline;
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+        }
+        input[type="text"] , input[type="password"], input[type="email"] {
+                border-radius: 4px;
+                border:1px solid rgb(74, 74, 74);
+            }
+            select {
+                border-radius: 4px;
+                border:1px solid rgb(73, 73, 73);
+            }
+            .rcorners
+            {
+                border-radius: 10px;
+            }
+         </style>
+        </head>
+        <body>
+            <h1>STUDENT REGISTRATION FORM</h1>
+            <form>
+                <fieldset>
+                    <legend style="font-family:Arial;"><strong>Basic Information</strong></legend>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>First Name<span class="required">*</span>:</td>
+                            <td><input type="text" id="first_name" name="first_name" required></td>
+                            <td style="text-align: right;">Middle Name:</td>
+                            <td><input type="text" id="middle_name" name="middle_name"></td>
+                            <td style="text-align: left;">Last Name<span class="required">*</span>:</td>
+                            <td><input type="text" id="last_name" name="last_name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Roll no<span class="required">*</span>:</td>
+                            <td><input type="text" id="roll_no" name="roll_no" required></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Email ID<span class="required">*</span>:</td>
+                            <td><input type="email" id="email" name="email" required></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Contact no<span class="required">*</span>:</td>
+                            <td><input type="text" id="phone_no" name="phone_no" required></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>User ID<span class="required">*</span>:</td>
+                            <td><input type="text" id="user" name="user"required></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Enter password<span class="required">*</span>:</td>
+                            <td><input type="password" id="password" name="password"required></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Re-Enter password<span class="required">*</span>:</td>
+                            <td><input type="password" id="repassword" name="repassword" required></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Select State<span class="required">*</span>:</td>
+                            <td>
+                            <select>
+                                <option value=""></option>
+                                <option value="">Tamil Nadu</option>
+                                <option value="">Kerala</option>
+                                <option value="">Karnataka</option>
+                                <option value="">Maharashtra</option>
+                                <option value="">Andhra Pradesh</option>
+                                <option value="">Odisha</option>
+                                <option value="">Telangana</option>
+                                <option value="">Chattisgarh</option>
+                                <option value="">Madhya Pradesh</option>
+                                <option value="">Gujarat</option>
+                                <option value="">Rajasthan</option>
+                                <option value="">Uttar Pradesh</option>
+                                <option value="">Bihar</option>
+                                <option value="">Jharkhand</option>
+                                <option value="">West Bengal</option>
+                                <option value="">Sikkim</option>
+                                <option value="">Assam</option>
+                                <option value="">Any North Eastern state</option>
+                                <option value="">Haryana</option>
+                                <option value="">Punjab</option>
+                                <option value="">Uttarakhand</option>
+                                <option value="">Himachal Pradesh</option>
+                                <option value="">Jammu Kashmir</option>
+                                </select>
+                                </td>
+                                <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Select Country<span class="required">*</span>:</td>
+                            <td>
+                            <select>
+                                <option value=""></option>
+                                <option value="">India</option>
+                                <option value="">Australia</option>
+                                <option value="">USA</option>
+                                <option value="">New Zealand</option>
+                                <option value="">UK</option>
+                                <option value="">Canada</option>
+                                <option value="">Sri Lanka</option>
+                                <option value="">UAE</option>
+                                <option value="">Singapore</option>
+                                <option value="">Other (Mention on right)</option>
+                            </select>
+                            </td>
+                            <td></td>    
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Language Known<span class="required">*</span>:</td>
+                            <td><input type="text" id="languageknown" name="languageknown"required></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Subject of Interest<span class="required">*</span>:</td>
+                            <td><input type="text" id="subofinterest" name="subofinterest"required></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Branch<span class="required">*</span>:</td>
+                            <td>
+                                <select name="branch" required>
+                                    <option value="CSE">CSE</option>
+                                    <option value="ECE">ECE</option>
+                                    <option value="IT">IT</option>
+                                    <option value="MECH">MECH</option>
+                                </select>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Year of Studying<span class="required">*</span>:</td>
+                            <td>
+                                <select name="year" required>
+                                    <option value="First">First</option>
+                                    <option value="Second">Second</option>
+                                    <option value="Third">Third</option>
+                                    <option value="Fourth">Fourth</option>
+                                </select>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Upload Photo<span class="required">*</span>:</td>
+                            <td><input type="file" name="photo" required></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend style="font-family:Arial;"><strong>Personal Details</strong></legend>
+                    <table>
+                        <tr>
+                            <td>Father Name<span class="required">*</span>:</td>
+                            <td><input type="text" id="father_name" name="father_name" required></td>
+                            <td>Contact No<span class="required">*</span>:</td>
+                            <td><input type="text" id="contact" name="contact" required></td>
+                        </tr>
+                        <tr>
+                            <td>Mother Name<span class="required">*</span>:</td>
+                            <td><input type="text" id="mother_name" name="mother_name" required></td>
+                            <td>Contact No:</td>
+                            <td><input type="text" id="contact1" name="contact1"></td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth<span class="required">*</span>:</td>
+                            <td><input type="date" id="birth" name="birth" required></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Aadhaar No.<span class="required">*</span>:</td>
+                            <td><input type="text" id="aadhaar" name="aadhar" required></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend style="font-family:Arial;"><strong>Address</strong></legend>
+                    <table class="rcorners">
+                        <tr>
+                            <td >Address 1<span class="required">*</span>:</td>
+                            <td colspan="5"><textarea style="border-radius: 10px; border:1px solid rgb(74, 74, 74);" name="address1" rows="5" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Address 2:</td>
+                            <td colspan="5"><textarea style="border-radius: 10px; border:1px solid rgb(73, 73, 73);" name="address2" rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Pin Code<span class="required">*</span>:</td>
+                            <td><input type="text" id="pin_code" name="pin_code" required></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <footer>
+                    <input type="submit" value="Register" style="border-radius: 3px; border:1px solid rgb(74, 74, 74);">
+                    <input type="reset" style="border-radius: 3px; border:1px solid rgb(73, 73, 73);">
+                </footer>
+            </form>
+        </body>
+    </html>
+</doctype>
