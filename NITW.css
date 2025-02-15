@@ -1,0 +1,111 @@
+*{
+    margin :0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.top{
+    padding:10px;
+    background-color:#214875;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+
+}
+.container{
+    width :80%;
+    margin :auto;
+}
+ul{
+    list-style: none;
+    display:flex;
+    gap: 7px;
+    align-items: center;
+}
+.navi{
+    list-style: none;
+    display:flex;
+    gap: 50px;
+    align-items: center;
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width:100px;
+}
+.image{
+    border-radius: 20px;
+    width:30px;
+}
+.i{
+    width:200px;
+    height:auto;
+}
+.flexcontainer{
+    display:flex;
+    align-items: center;
+    gap : 30px;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin : 0px 20%;
+}
+hr{
+    height: 10px;
+    background-color : #214875;
+}
+a{
+    color :black;
+    text-decoration: none;
+}
+a:visited{
+    color :black;
+    text-decoration: none;
+}
+.content{
+    display:flex;
+}
+.ranks{
+    display: flex;
+    gap: 50px;
+    justify-content: center; 
+    align-items: center; 
+}
+.ranking{
+    color:#214875;
+    text-align: center;
+}
+section{
+    width: 150px; 
+    height: 150px;
+    border: 5px solid #214875; 
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; 
+    text-align: center;
+    font-size: 16px; 
+    line-height: 1.2; 
+    color:#214875;
+}
+.director-image {
+    width: 250px; 
+    height: auto;
+    border-radius: 1px; 
+    float: left; 
+    margin-right: 20px; 
+    margin-bottom: 10px; 
+}
+.message-container{
+    width:80%;
+}
+.showcase{
+    width: 100%;
+    height: 500px;
+    background-image: url('nitw.jpeg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
