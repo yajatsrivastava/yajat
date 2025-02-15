@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FATEHPUR SIKRI</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: crimson;
+            background-image: linear-gradient(grey, black);
+            padding: 20px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .description {
+            text-align: center;
+            font-size: 25px;
+            max-width: 80%;
+            margin: 20px auto;
+            line-height: 1.6;
+            color: blue ;
+        }
+        .slider-wrapper {
+            position: relative;
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            overflow: hidden; 
+            margin-bottom: 30px;
+        }
+        .slider {
+            display: flex;
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 5%;
+        }
+        .slider-nav {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav a {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            opacity: 75%;
+            transition: opacity ease 250ms;
+        }
+        .slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+        }
+        img {
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        @media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>FATEHPUR SIKRI</h1>
+    
+    <div class="description">
+        Located at a distance of 40km from Agra, Fatehpur Sikri is a town in the Agra district and a famous tourist attraction. A city predominantly made of red sandstone, Fatehpur Sikri was founded in 1571 century by Mughal Emperor Akbar. It is essentially a fortified city built by the king and had been the capital of his Empire for fifteen years. Now a UNESCO world heritage site, it is home to Jodha Bai's Palace, Jama Mosque, Buland Darwaza, and Tomb of Salim Chisti among many other famous monuments. Derived from Arab and central Asian tent encampments, the Imperial Complex is a work of pavilions arranged in formal geometry on a piece of land.<br>
+
+A unique blend of architectural excellence, as well as religious beliefs - sums up Fatehpur Sikri. It was built by Akbar to honour Sheikh Salim Chisti, whose prediction of the birth of a Mughal heir came true while Akbar was visiting the then city of Sikri. In honour of the prophecy, Akbar built this city and Jama Masjid, a stunning mosque which is still in use today. He also undertook the construction of three palaces for each of his favourite wives, one a Hindu, one a Muslim and one a Christian. An Indo-Islamic Masterpiece, Fatehpur Sikri look its resplendent best during sunset.
+        </div>
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slide">
+                <img id="slide-1" src="agra02.jpg" alt="fatehpursikri1">
+            </div>
+            <div class="slide">
+                <img id="slide-2" src="fatehpursikri01.jpeg" alt="fatehpursikri2">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+        </div>
+    </div>
+</body>
+</html>

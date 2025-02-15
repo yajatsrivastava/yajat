@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAJ MAHAL</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: crimson;
+            background-image: linear-gradient(grey, black);
+            padding: 20px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .description {
+            text-align: center;
+            font-size: 25px;
+            max-width: 80%;
+            margin: 20px auto;
+            line-height: 1.6;
+            color: blue ;
+        }
+        .slider-wrapper {
+            position: relative;
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            overflow: hidden; 
+            margin-bottom: 30px;
+        }
+        .slider {
+            display: flex;
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 5%;
+        }
+        .slider-nav {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav a {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            opacity: 75%;
+            transition: opacity ease 250ms;
+        }
+        .slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+        }
+        img {
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        @media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>TAJ MAHAL</h1>
+    
+    <div class="description">
+        One of the seven wonders of the world, Taj Mahal is located on the banks of River Yamuna in Agra. It was built by the Mughal Emperor Shah Jahan as a memorial for his third wife, Mumtaz Mahal. It also houses the tomb of Shah Jahan himself. Constructed entirely out of white marble in the 17th century, Taj Mahal is one of the most beautiful monuments in the world. Every year visitors numbering more than the entire population of Agra pass through the magnificent gates to catch a glimpse of this breathtaking monument!<br>
+
+        A UNESCO World Heritage Site, the Taj Mahal stands for the Crown of Palaces in the Persian language. The tomb is laid out in a rectangular shape and can be approached through a massive gateway which has an arch and alcoves on either side of it. There are water channels and fountains in the entrance which makes the monument even more spectacular. The reflection of this majestic spectacle in the Yamuna is almost poetic in its perfection!<br>
+        
+        Covering an area of approximately 42 Acres, the construction of the Taj Mahal began in 1631 and it took 17 years before it was completed in 1648! It was constructed using white marble obtained from Makrana in Rajasthan.
+    </div>
+
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slide">
+                <img id="slide-1" src="agra01.jpeg" alt="tajmahal1">
+            </div>
+            <div class="slide">
+                <img id="slide-2" src="tajmahal03.jpeg" alt="tajmahal3">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+        </div>
+    </div>
+</body>
+</html>

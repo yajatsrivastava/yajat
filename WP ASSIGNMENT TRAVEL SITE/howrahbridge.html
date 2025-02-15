@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOWRAH BRIDGE</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: crimson;
+            background-image: linear-gradient(grey, black);
+            padding: 20px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .description {
+            text-align: center;
+            font-size: 25px;
+            max-width: 80%;
+            margin: 20px auto;
+            line-height: 1.6;
+            color: blue ;
+        }
+        .slider-wrapper {
+            position: relative;
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            overflow: hidden; 
+            margin-bottom: 30px;
+        }
+        .slider {
+            display: flex;
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 5%;
+        }
+        .slider-nav {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav a {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            opacity: 75%;
+            transition: opacity ease 250ms;
+        }
+        .slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+        }
+        img {
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        @media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>HOWRAH BRIDGE</h1>
+    
+    <div class="description">
+        An iconic landmark of Kolkata, Howrah Bridge is a massive steel bridge constructed over the Hooghly River. It is considered to be among the longest cantilever bridges in the world. Also known as Rabindra Setu, it connects Howrah and Kolkata. It carries daily traffic of over 100,000 vehicles and countless pedestrians and is as historic as it is grand. The opulence of the bridge, however, comes alive in the night time as it is all lit up. You can also take a ferry ride as it runs between Kolkata and Howrah, from the launch ghat. The view of the city from the ferry, especially in the night, is priceless, to say the least.<br>
+
+Howrah Bridge was the third-longest cantilever bridge at the time of its construction, but now it is the sixth-longest one of its types. It was renamed as Rabindra Setu on June 14, 1965, after the name of Nobel Laureate Rabindranath Tagore. It spreads about 1500 ft over the Hooghly River and is 71 ft wide. There is a total of 8 lanes of strand road, bicycles, and pedestrians. What makes this bridge unique is the fact that it was built without a single nut or bolt and is held together by rivets.
+</div>
+
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slide">
+                <img id="slide-1" src="howrah.jpeg" alt="howrah">
+            </div>
+            <div class="slide">
+                <img id="slide-2" src="kolkata02.jpg" alt="howrah1">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+        </div>
+    </div>
+</body>
+</html>

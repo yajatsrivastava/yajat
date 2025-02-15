@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHARDUNG LA PASS</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: crimson;
+            background-image: linear-gradient(grey, black);
+            padding: 20px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .description {
+            text-align: center;
+            font-size: 25px;
+            max-width: 80%;
+            margin: 20px auto;
+            line-height: 1.6;
+            color: blue ;
+        }
+        .slider-wrapper {
+            position: relative;
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            overflow: hidden; 
+            margin-bottom: 30px;
+        }
+        .slider {
+            display: flex;
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 5%;
+        }
+        .slider-nav {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav a {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            opacity: 75%;
+            transition: opacity ease 250ms;
+        }
+        .slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+        }
+        img {
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        @media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>KHARDUNG LA PASS</h1>
+    
+    <div class="description">
+        Khardung La, also known as Khardzong La, is a high mountain pass in Ladakh region of Jammu and Kashmir, near Leh. It serves as the gateway to Shyok and Nubra Valley. Khardung La is popular as the highest motorable road in India at an elevation of 5602 metres. However, contrary to the belief, its actual elevation is 5359 metres making Dungri La the highest motorable road pass in India.
+
+Khardung La pass is a perfect getaway for adventure enthusiasts, peace seekers and mountain biking aficionados. An Inner Line Permit is required by the tourists to enter the pass and travel through it. Due to heavy rains and snowfall, the Khardung La pass remains closed from October to May.
+</div>
+
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slide">
+                <img id="slide-1" src="khardungla.jpeg" alt="khardungla">
+            </div>
+            <div class="slide">
+                <img id="slide-2" src="ladakh02.jpg" alt="khardungla1">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRA FORT</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: crimson;
+            background-image: linear-gradient(grey, black);
+            padding: 20px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .description {
+            text-align: center;
+            font-size: 25px;
+            max-width: 80%;
+            margin: 20px auto;
+            line-height: 1.6;
+            color: blue ;
+        }
+        .slider-wrapper {
+            position: relative;
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            overflow: hidden; 
+            margin-bottom: 30px;
+        }
+        .slider {
+            display: flex;
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 5%;
+        }
+        .slider-nav {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav a {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            opacity: 75%;
+            transition: opacity ease 250ms;
+        }
+        .slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+        }
+        img {
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        @media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>AGRA FORT</h1>
+    
+    <div class="description">
+        An architectural masterpiece, The Red Fort of Agra or Agra Fort was built by Emperor Akbar in 1573. It is located on the right bank of the River Yamuna and is made entirely of red sandstone. The historical fort was once the ersthwhile residence of the Mughals until 1638. One of the UNESCO World Heritage Sites, it lies 2.5 kilometres from Taj Mahal.<br>
+
+Also known as Lal -Qila, Fort Rouge or Qila-i-Akbari, Agra Fort is a symbol of Agra and is so massive that it is often referred to as a walled city. It is the perfect example of Mughal art and architecture, built purely out of red sandstone. Within the premises of Agra Fort lie the most exquisite structures like the Pearl Mosque, Diwan-i I Khas, Diwan-i I Aam, Moti Masjid and Jahangiri Mahal. Some part of the Agra Fort is used by the Indian Army is off-limit to public access. View of Yamuna River and Taj Mahal from the fort's pavilions is mind-stirring.
+        </div>
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slide">
+                <img id="slide-1" src="agra03.jpg" alt="agra03">
+            </div>
+            <div class="slide">
+                <img id="slide-2" src="agrafort.jpeg" alt="agrafort">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+        </div>
+    </div>
+</body>
+</html>

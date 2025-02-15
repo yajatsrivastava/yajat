@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        fieldset {
+            border-radius: 10px;
+        }
+        legend {
+            color: red;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .required {
+            color: red;
+        }
+        h1 {
+            margin-left: 15cm;
+            color: rgb(192, 5, 220);
+            display: inline;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer {
+            text-align: center;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
+            border-radius: 4px;
+            border: 1px solid rgb(69, 69, 69);
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        select {
+            border-radius: 4px;
+            border: 1px solid rgb(69, 69, 69);
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .rcorners {
+            border-radius: 10px;
+        }
+        .form-container {
+            width: 50%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="submit"] {
+            background-color: rgb(192, 5, 220);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(155, 5, 180);
+        }
+        body {
+            background-image: repeating-linear-gradient(aqua, aquamarine);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hotel Booking Form</h1>
+
+    <div class="form-container">
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Booking Details</legend>
+
+                <div class="form-group">
+                    <label for="check-in">Check-In Date <span class="required">*</span></label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="check-out">Check-Out Date <span class="required">*</span></label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="room-type">Room Type <span class="required">*</span></label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="">Select a room type</option>
+                        <option value="single">Single Room</option>
+                        <option value="double">Double Room</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests <span class="required">*</span></label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Select number of guests</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <div class="form-group"  style="text-align: center;">
+                <input type="submit" value="Book Now">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sri Travels. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

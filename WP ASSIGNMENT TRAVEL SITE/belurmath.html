@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELUR MATH</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: crimson;
+            background-image: linear-gradient(grey, black);
+            padding: 20px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .description {
+            text-align: center;
+            font-size: 25px;
+            max-width: 80%;
+            margin: 20px auto;
+            line-height: 1.6;
+            color: blue ;
+        }
+        .slider-wrapper {
+            position: relative;
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            overflow: hidden; 
+            margin-bottom: 30px;
+        }
+        .slider {
+            display: flex;
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 5%;
+        }
+        .slider-nav {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav a {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            opacity: 75%;
+            transition: opacity ease 250ms;
+        }
+        .slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+        }
+        img {
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        @media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>BELUR MATH</h1>
+    
+    <div class="description">
+        Belur Math in Kolkata is the headquarters of the Ramakrishna Math and Mission. Sprawling over forty acres of land on the west bank of the Hooghly River, it is visited by people from all over the world, irrespective of their religious beliefs.
+
+
+The temple is known for its distinctive architecture, which fuses Hindu, Christian and Islamic motifs as a symbol of unity of all religions. Founded by Swami Vivekananda, the chief disciple of Ramakrishna Paramahansa, the temple is at the heart of the Ramakrishna Movement. The temple complex also houses a museum and several other affiliated educational institutions. The evening Aarti takes place 5:30 PM, at which an evening bell is rung to indicate that visitors are not allowed to loiter on the Math grounds and are also not allowed to visit any temple other than Sri Ramakrishna temple. The Aarti songs sung are hymns of praise to Sri Ramakrishna and Sri Sarada Devi. The Aarti here is different from those at other places of worship since one is expected just to sit and meditate. There is no religious offering made. Flowers and sweets are not offered.
+</div>
+
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slide">
+                <img id="slide-1" src="kolkata05.jpg" alt="belurmath">
+            </div>
+            <div class="slide">
+                <img id="slide-2" src="belurmath.jpeg" alt="belurmath1">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+        </div>
+    </div>
+</body>
+</html>

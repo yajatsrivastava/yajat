@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDEN GARDENS</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: crimson;
+            background-image: linear-gradient(grey, black);
+            padding: 20px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .description {
+            text-align: center;
+            font-size: 25px;
+            max-width: 80%;
+            margin: 20px auto;
+            line-height: 1.6;
+            color: blue ;
+        }
+        .slider-wrapper {
+            position: relative;
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            overflow: hidden; 
+            margin-bottom: 30px;
+        }
+        .slider {
+            display: flex;
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 5%;
+        }
+        .slider-nav {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav a {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            opacity: 75%;
+            transition: opacity ease 250ms;
+        }
+        .slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+        }
+        img {
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.02);
+        }
+        @media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>EDEN GARDENS</h1>
+    
+    <div class="description">
+        Home of cricket in Kolkata, The Eden Gardens is a beautiful, well-maintained cricket stadium located in Kolkata's B. B. D. Bagh area, near State Secretariat and Calcutta High Court. It was established in the year 1864 and was laid by Governor- General Auckland, who named the gardens and the cricket ground after his sisters Emily and Fanny Eden. Stretched over 50 acres, this cricket stadium has the capacity to seat about 66,349 people and is the second largest stadiums in the world. When it is not hosting some of the most nail-biting sporting events, Eden Gardens also doubles up as a quaint destination for nature lovers.<br>
+
+The verdant pathways of Eden Gardens are shaded by huge mahogany, mango and banyan trees that make it a peaceful place to sit and enjoy the marvels of nature. There is also a three-storeyed Burmese Pagoda in red and golden yellow that was brought here by Lord Dalhousie. Eden Gardens Stadium plays host to many sports, most importantly cricket, which takes place lies right across the garden. Extremely popular as a sporting destination, it regularly hosts one day, test and T20 matches. Presently it is the home turf of IPL Team Kolkata Knight Riders and the regional Bengal Cricket Team. Eden Garden is also known to host several Association Matches. You can visit the stadium when no matches are being held. In order to do so, you need permission from CAB or Cricket Association of Bengal.
+</div>
+
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slide">
+                <img id="slide-1" src="kolkata06.webp" alt="edengardens">
+            </div>
+            <div class="slide">
+                <img id="slide-2" src="edengardens.jpeg" alt="edengardens1">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+        </div>
+    </div>
+</body>
+</html>
