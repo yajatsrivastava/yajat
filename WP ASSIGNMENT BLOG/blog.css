@@ -1,0 +1,167 @@
+body{
+    margin: 0%;
+    background-image: url('blogbg2.jpeg');
+    background-size: cover;
+}
+header {
+    background-color: inherit;
+    padding: 20px 0px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img {
+    margin: 0 0 0 20px;
+}
+header h1 {
+    margin: 0;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aquamarine;
+}
+header ul {
+    
+    display:flex;
+    list-style: none;
+    justify-content: right;
+    margin: 0 20px 0 0;
+}
+header li {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: aquamarine;
+}
+nav ul li {
+    text-transform: uppercase;
+}
+.container {
+    align-items: center;
+    display:inline-flex;
+}
+a {
+    text-decoration: none;
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+    
+}
+a:hover {
+    color:deeppink;
+    text-decoration: underline;
+    text-underline-offset: 0.1em;  
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    color:aqua;
+    text-shadow: 2px;
+}
+.hero h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.blog-section {
+    padding: 50px 20px;
+    text-align: center;
+    color: red;
+    text-shadow: 1px 1px black;
+}
+
+.blog-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.blog-card {
+    border-style:groove ;
+    border-color: red;
+    background-image:radial-gradient(white, aqua);
+    border-radius: 10%;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-card h3 {
+    padding: 20px;
+    font-size: 24px;
+    font-family: 'papyrus';
+}
+
+.blog-card p {
+    padding: 0 20px 20px;
+    font-size: 16px;
+    color: #ac2b9d;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card:hover img {
+    transform: scale(1.02);
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: rotate(360deg);
+}
+
+.social-icon:hover {
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
