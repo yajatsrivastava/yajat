@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calc">
+        <input type="text"/>
+        <button class="calc-keys">AC</button>
+        <button class="calc-keys">7</button>
+        <button class="calc-keys">8</button>
+        <button class="calc-keys">9</button>
+        <button class="calc-keys">/</button>
+        <button class="calc-keys">4</button>
+        <button class="calc-keys">5</button>
+        <button class="calc-keys">6</button>
+        <button class="calc-keys">*</button>
+        <button class="calc-keys">1</button>
+        <button class="calc-keys">2</button>
+        <button class="calc-keys">3</button>
+        <button class="calc-keys">+</button>
+        <button class="calc-keys">0</button>
+        <button class="calc-keys">.</button>
+        <button class="calc-keys">=</button>
+        <button class="calc-keys">-</button>
+        <button class="calc-keys">C</button>
+        <button class="calc-keys">sin</button>
+        <button class="calc-keys">cos</button>
+        <button class="calc-keys">tan</button>
+        <button class="calc-keys">exp</button>
+        <button class="calc-keys">x²</button>
+        <button class="calc-keys">sqrt</button>
+        <button class="calc-keys">a^x</button>
+    </div>
+    <script>
+        const buttons = document.querySelectorAll('.calc-keys');
+        const inputField = document.querySelector('input[type="text"]');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const value = button.innerText;
+                if (value === 'AC') {
+                    clearDisplay();
+                }
+                else if (value === '=') {
+                    calculateResult();
+                }
+                else if (['sin', 'cos', 'tan', 'exp', 'sqrt', 'x²', 'a^x'].includes(value)) {
+                    performMathFunction(value);
+                }
+                else if(value==='C')
+                {
+                    backspace();
+                }
+                else {
+                    updateDisplay(value);
+                }
+            });
+        });
+        function updateDisplay(value) {
+            inputField.value += value;
+        }
+        function clearDisplay() {
+            inputField.value = ''; 
+        }
+        function calculateResult() {
+            try 
+            {
+                let result = eval(inputField.value);
+                inputField.value = result; 
+            } catch (error) 
+            {
+                inputField.value = 'Error';
+            }
+        }
+        function performMathFunction(functionName) {
+            let expression = inputField.value;
+
+            if (functionName === 'sin') {
+                inputField.value = 'Math.sin(' + expression + ')';
+            } else if (functionName === 'cos') {
+                inputField.value = 'Math.cos(' + expression + ')';
+            } else if (functionName === 'tan') {
+                inputField.value = 'Math.tan(' + expression + ')';
+            } else if (functionName === 'exp') {
+                inputField.value = 'Math.exp(' + expression + ')';
+            } else if (functionName === 'sqrt') {
+                inputField.value = 'Math.sqrt(' + expression + ')';
+            } else if (functionName === 'x²') {
+                inputField.value = '(' + expression + ') ** 2';
+            } else if (functionName === 'a^x') {
+                inputField.value ='(' +expression + ') **';
+            }
+        }
+            function backspace() {
+            inputField.value = inputField.value.slice(0, -1);
+        }
+    </script>
+</body>
+</html>
