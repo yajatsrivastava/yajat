@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Favourite Movies</title>
+        <link rel="stylesheet" href="assignment07.css">
+    </head>
+    <body>
+        <div class="container">
+        <h1>Favourite Movies</h1>
+        <input type="text" id="movie-input" placeholder="Enter movie name">
+        <button id="add-movie-btn">Add Movie</button>
+        <button id="clear-list-btn">Clear List</button>
+        <ul id="movie-list"></ul>
+        <p>Total Movies: <span id="total-movies">0</span></p>
+        </div>
+    </body>
+    <script>
+        const movieInput = document.getElementById('movie-input');
+        const addMovieButton = document.getElementById('add-movie-btn');
+        const clearListButton = document.getElementById('clear-list-btn');
+        const movieList = document.getElementById('movie-list');
+        const totalMoviesDisplay = document.getElementById('total-movies');
+        let movies = [];
+        function updateMovieList() 
+        {
+            movieList.innerHTML = '';
+            movies.forEach((movie, index) => {
+            const li = document.createElement('li');
+            li.textContent = movie;
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.classList.add('remove-btn');
+            removeButton.addEventListener('click', () => removeMovie(index));
+            li.appendChild(removeButton);
+            movieList.appendChild(li);
+            });
+            totalMoviesDisplay.textContent = movies.length;
+        }
+        function addMovie() {
+        const movieName = movieInput.value.trim();
+        if (movieName === '') {
+        alert('Please enter a valid movie name!');
+        return;
+        }
+        movies.push(movieName);
+        movieInput.value='';
+        updateMovieList();
+        }
+        function removeMovie(index)
+        {
+            movies.splice(index,1);
+            updateMovieList();
+        }
+        function clearMovieList()
+        {
+            movies=[];
+            updateMovieList();
+        }
+        addMovieButton.addEventListener('click', addMovie);
+        clearListButton.addEventListener('click', clearMovieList);
+    </script>
+</html>
